@@ -10,7 +10,7 @@ public class TimeTest {
         System.out.println(t.toString());
         t.setHour(13);
         System.out.println(t.toString());
-        
+        System.out.println(t.toUniversalString());
     }
     
 }
@@ -56,7 +56,7 @@ class Time
         return this.second;
     } 
     
-    public int getMunite()
+    public int getMinute()
     {
         return this.minute;
     }
@@ -113,6 +113,11 @@ class Time
         {
             am = "PM";
         }
-        return this.getHour() +":"+ this.getMunite() +":"+ this.getSecond() +" " + am;
+        return this.getHour() +":"+ this.getMinute() +":"+ this.getSecond() +" " + am;
+    }
+    
+    public String toUniversalString()
+    {
+        return String.format("%02d:%02d:%02d",this.getHour(), this.getMinute(), this.getSecond());
     }
 }
