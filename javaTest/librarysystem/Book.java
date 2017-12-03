@@ -164,7 +164,7 @@ public class Book implements Serializable{
 
 	}; 
   
-    public static Comparator<Book> FruitYearComparator
+    public static Comparator<Book> BookYearComparator
                           = new Comparator<Book>() {
 
             @Override
@@ -180,7 +180,7 @@ public class Book implements Serializable{
             }
 	}; 
     
-    public static Comparator<Book> FruitISBNComparator
+    public static Comparator<Book> BookISBNComparator
                           = new Comparator<Book>() {
 
             @Override
