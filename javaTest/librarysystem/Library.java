@@ -109,12 +109,12 @@ public class Library {
     
     public static void sortByISBN()
     {
-        Collections.sort(lib, Book.FruitISBNComparator);
+        Collections.sort(lib, Book.BookISBNComparator);
     }
     
     public static void sortByYear()
     {
-        Collections.sort(lib, Book.FruitYearComparator);
+        Collections.sort(lib, Book.BookYearComparator);
     }
     
 }
